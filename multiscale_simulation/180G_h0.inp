@@ -1,0 +1,18 @@
+*Heat Transfer, end=PERIOD, deltmx=200.
+1e-06, 0.00025, 1e-08, 0.00025, 
+*Boundary
+Set-bottom, 11, 11, 25.
+*Dflux
+Part-global-1.Set-all, BFNU, 1.
+*Field,User,Number=2
+Part-global-1.Set-all,
+*FILM
+Part-global-1.Set-all,F1NU
+*Restart, write, frequency=9999
+*Output, field, time interval=2.5e-05
+*Node Output
+NT, 
+*Element Output, directions=YES
+FV, 
+*Output, history, frequency=0
+*End Step

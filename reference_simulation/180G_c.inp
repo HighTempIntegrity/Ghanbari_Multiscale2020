@@ -1,0 +1,10 @@
+*Heat Transfer, end=PERIOD, deltmx=200.
+1e-06, 1., 1e-08, 1.,
+*Restart, write, frequency=9999 
+*Output, field
+*Node Output
+NT, 
+*Element Output, directions=YES
+FV, 
+*Output, history, frequency=0
+*End Step

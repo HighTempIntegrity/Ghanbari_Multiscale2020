@@ -1,0 +1,12 @@
+*Heat Transfer, end=PERIOD, deltmx=200.
+1e-06, 0.00025, 1e-08, 0.00025, 
+*FIELD,USER,NUMBER=1
+Part-global-1.Set-all,
+*Restart, write, frequency=9999 
+*Output, field, time interval=2.5e-05
+*Node Output
+NT, 
+*Element Output, directions=YES
+FV, 
+*Output, history, frequency=0
+*End Step
